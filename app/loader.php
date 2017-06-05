@@ -167,7 +167,7 @@ if(!Settings::get('chevereto_version_installed')) {
 }
 
 // Process ping update
-if(Settings::get('enable_automatic_updates_check') && array_key_exists('ping', $_REQUEST) && $_REQUEST['r']) {
+if(Settings::get('enable_automatic_updates_check') && array_key_exists('', $_REQUEST) && $_REQUEST['r']) {
 	L10n::setLocale(Settings::get('default_language')); // Force system language
 	checkUpdates();
 }
